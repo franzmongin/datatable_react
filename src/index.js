@@ -1,4 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import DataTable from "./lib/DataTable/DataTable";
 
-ReactDOM.render(<div>Hello world</div>, document.getElementById("root"));
+ReactDOM.render(
+  <>
+    <DataTable />
+  </>,
+  document.getElementById("root")
+);
