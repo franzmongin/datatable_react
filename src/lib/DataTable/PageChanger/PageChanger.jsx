@@ -62,10 +62,6 @@ function PageChanger({
 
   return (
     <>
-      <span>
-        current Page is {currentPage} and maxPage is {maxPage} and (max Page -
-        5) is {maxPage - 5}
-      </span>
       <div
         className="dataTables_info"
         id="employee-table_info"
