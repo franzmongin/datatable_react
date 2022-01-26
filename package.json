@@ -1,6 +1,6 @@
 {
   "name": "datatable_table_react_test",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
