@@ -1,69 +1,25 @@
 # DataTable React HRNET
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Install the package
 
-In the project directory, you can run:
+Install the package in your project with `npm i datatable_table_react_test`
 
-### `npm start`
+### Import the component in your code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`import { Datatable } from "datatable_table_react_test";`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Use it in your code
 
-### `npm test`
+Use it as a React Component `<DataTable columns={...} data ={...}/>`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Pass it a "columns" prop on this model:
 
-### `npm run build`
+`[{ title: "First Name", data: "firstName" }, { title: "Last Name", data: "lastName" }, { title: "Start Date", data: "startDate" }, { title: "Department", data: "department" }, { title: "Date of Birth", data: "dateOfBirth" }, { title: "Street", data: "street" }, { title: "City", data: "city" }, { title: "State", data: "state" }, { title: "Zip Code", data: "zipCode" }]`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+One title value and one data value for each column you want to display in your table.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Pass it a "data" prop on this model:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`[{ firstName: "Michel", lastName: "Augustin", dateOfBirth: "01/01/1991", startDate: "31/12/2021", department: "Sales", street: "3 rue de Rivoli, ", city: "paris", state: "FR", zipCode: "75004", }, { firstName: "Jean", lastName: "Claude", dateOfBirth: "25/08/2005", startDate: "25/11/2019", department: "Marketing", street: "4 rue de Charonne, ", city: "paris", state: "FR", zipCode: "75011" }]`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The keys have to exist in the "columns" prop data values.
