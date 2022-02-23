@@ -1,5 +1,8 @@
 # DataTable React HRNET
 
+Here is the link of this package published on npm
+https://www.npmjs.com/package/datatable_table_react_test
+
 ## Install the package
 
 Install the package in your project with `npm i datatable_table_react_test`

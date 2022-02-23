@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 // component which contains the buttons to change the current page by a number or by a previous or next button to navigate between pages
 function PageChanger(_ref) {
-  var numberOfEmployees = _ref.numberOfEmployees,
+  var numberOfEntries = _ref.numberOfEntries,
       tableDataLength = _ref.tableDataLength,
       numberOfRows = _ref.numberOfRows,
       currentPage = _ref.currentPage,
@@ -21,7 +21,7 @@ function PageChanger(_ref) {
   var endOfChunk = numberOfRows * currentPage; //manage last page chunk if length of current page data is less than number of rows selected
 
   if (tableDataLength < numberOfRows) {
-    endOfChunk = numberOfEmployees;
+    endOfChunk = numberOfEntries;
   } // if current data is empty, set begin and end of chunk equal to 0
 
 
@@ -67,12 +67,12 @@ function PageChanger(_ref) {
     }, i + 1));
   }
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("span", null, "current Page is ", currentPage, " and maxPage is ", maxPage, " and (max Page - 5) is ", maxPage - 5), /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "dataTables_info",
     id: "employee-table_info",
     role: "status",
     "aria-live": "polite"
-  }, "Showing ", beginOfChunk, " to ", endOfChunk, " of ", numberOfEmployees, " entries"), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Showing ", beginOfChunk, " to ", endOfChunk, " of ", numberOfEntries, " entries"), /*#__PURE__*/_react.default.createElement("div", {
     className: "dataTables_paginate paging_simple_numbers",
     id: "employee-table_paginate"
   }, /*#__PURE__*/_react.default.createElement("button", {

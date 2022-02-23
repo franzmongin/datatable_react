@@ -74,7 +74,7 @@ function DataTable(_ref) {
       batchedData = _useState12[0],
       setbatchedData = _useState12[1];
 
-  var numberOfEmployees = rawDataWithSearch.length; // change batched data (array of paginated data) on each search change
+  var numberOfEntries = rawDataWithSearch.length; // change batched data (array of paginated data) on each search change
 
   (0, _react.useEffect)(function () {
     setbatchedData(batchDataWithPaginationSelect(rawDataWithSearch, numberOfRows));
@@ -202,7 +202,7 @@ function DataTable(_ref) {
     tabledata: tabledata,
     columns: columns
   })), /*#__PURE__*/_react.default.createElement(_PageChanger.default, {
-    numberOfEmployees: numberOfEmployees,
+    numberOfEntries: numberOfEntries,
     tableDataLength: tabledataLength,
     numberOfRows: numberOfRows,
     currentPage: currentPage,
